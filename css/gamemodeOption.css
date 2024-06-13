@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-image: url(../assets/images/background2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    & header{
+        & h2{
+            border: 0.2vh solid black;
+            margin: 3vh;
+            border-radius: 2vh;
+            text-align: center;
+            padding: 1vh;
+            background-color: rgba(255,255,255,0.7)
+        }
+    }
+
+    & .option {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 70vh; /* Ensures full viewport height */
+        & .playButton {
+          border: 0.1vh solid black;
+          border-radius: 1vh;
+          background-color: lightskyblue;
+          padding: 6vh 15vh;
+          font-size: 5vh;
+          margin: 1vh;
+          transition: transform 0.3s ease, background-color 0.3s ease;
+          cursor: pointer;
+        }
+    }
+    
+
+    .playButton:hover{
+        transform: scale(1.1); /* Scale up by 10% on hover */
+        background-color: white; /* Change background color on hover */
+    }
+
+    & .mainPart{
+        margin: 5vh 5vh 5vh 5vh;
+        border-radius: 1vh;
+        max-height: 80%;
+        border: 0.2vh solid black;
+    }
+}
