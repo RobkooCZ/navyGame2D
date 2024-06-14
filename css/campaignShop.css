@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url(../assets/images/background.jpg);
+  
+    header {
+      .titleText {
+        border: 0.2vh solid black;
+        margin: 3vh;
+        border-radius: 2vh;
+        text-align: center;
+        padding: 1vh;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+  
+      #shipList, #shipInfo, #playerStats, #play, #buy {
+        border: 0.5vh solid black;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 1vh;
+        position: absolute;
+      }
+  
+      #shipList {
+        display: flex;
+        flex-direction: column;
+        padding: 2vh;
+        left: 5vh;
+        top: 10vh;
+        width: 50vh; /* Adjust width as needed */
+        height: auto;
+        max-height: 70%;
+        overflow: scroll;
+  
+        .ship {
+          border: 0.2vh solid black;
+          border-radius: 1vh;
+          background-color: rgba(255, 255, 255, 0.9);
+          padding: 2vh;
+          margin-bottom: 2vh;
+          text-align: center;
+  
+          img {
+            width: 100%;
+            height: auto;
+          }
+  
+          h2 {
+            margin: 1vh 0;
+          }
+        }
+      }
+  
+      #shipInfo {
+        padding: 25vh 27vh;
+        left: 62vh; /* Adjusted to prevent overlap */
+        top: 10vh;
+      }
+  
+      #playerStats {
+        padding: 30vh 10vh;
+        right: 5vh;
+        top: 10vh;
+      }
+  
+      #buy {
+        background-color: red;
+        padding: 5vh 10vh;
+        right: 82vh;
+        bottom: 20vh;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+      }
+  
+      #play {
+        background-color: red;
+        padding: 5vh 11vh;
+        right: 80.75vh;
+        bottom: 5vh;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+      }
+  
+      .backToMainMenu {
+        position: absolute;
+        bottom: 5vh;
+        right: 13.5vh;
+        border-radius: 1vh;
+        border: 0.5vh solid black;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 5vh;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+      }
+  
+      #buy:hover, #play:hover {
+        background-color: lightcoral;
+        transform: scale(1.1);
+      }
+  
+      .backToMainMenu:hover {
+        background-color: wheat;
+        transform: scale(1.1);
+        }
+    }
+}
